@@ -2,11 +2,8 @@ name: CI
 
 on:
   push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+    tags:
+      - "v*"
 
 env:
   DATABASE_URL: "postgresql://test:test@localhost:5432/test"
