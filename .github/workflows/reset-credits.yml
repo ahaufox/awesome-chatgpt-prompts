@@ -1,9 +1,9 @@
 name: Reset Daily Generation Credits
 
 on:
-  schedule:
-    # Run at midnight UTC every day
-    - cron: '0 0 * * *'
+  push:
+    tags:
+      - '*'
   workflow_dispatch:
 
 jobs:
